@@ -1,0 +1,13 @@
+Registers:
+bx and bp (and ss and sp)
+
+In x86 the registers bx and bp are totally unrelated. The only common thing about them is the word base.
+
+    bx (base index) is a general-purpose register (like ax, cx and dx), typically used as a pointer to data (used for arrays and such)
+    bp (base pointer) is typically used to point at some place in the stack (for instance holding the address of the current stack frames)
+
+Again, ss and sp are different as well.
+
+    ss (stack segment) is a segment register (like cs, ds and es). It holds the segment used by the stack.
+    sp (stack pointer) points at the top of the stack
+
